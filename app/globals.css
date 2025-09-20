@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0B0B0F;
+  color: #F6F7FB;
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  @apply px-6 py-3 rounded-full text-mist-white font-semibold transition-all;
+  background: linear-gradient(135deg, #FF2DAA, #FF6A00);
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px #FF2DAA;
+}
+
+.focus-ring:focus {
+  outline: none;
+  ring: 2px #7A3FF3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduced {
+    transition: none;
+  }
+}
